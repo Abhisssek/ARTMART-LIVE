@@ -1,0 +1,509 @@
+.auction-filter {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+    padding: 1rem;
+    /* background-color: #f9f9f9; */
+    border-radius: 12px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  }
+
+
+
+  .auctions-grid-main{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap:wrap ;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+    /* margin: 50px 50px; */
+    margin-bottom: 50px;
+ 
+ }
+  
+  .auction-filter label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+
+
+  .radio-input-auction{
+    margin: 0;
+  }
+
+  .auction-filter input[type="radio"] {
+    /* accent-color: #007bff !important; Blue highlight */
+    width: 18px;
+    height: 18px;
+    /* margin: 0; */
+    /* border: 2px solid white; */
+  }
+  
+
+
+  .card {
+    width: 320px;
+    height: 300px;
+    background: #212529;
+    padding: 0.4em;
+    border-radius: 6px;
+    margin: 1rem;
+    transition: transform 0.2s;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 230px;
+    border-radius: 6px 6px 0 0;
+    transition: transform 0.2s;
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+
+
+  .auction-filter-2{
+    display: none;
+  }
+
+  .filter-category{
+    border: .3px solid #7d7d7d;
+    /* padding: -10
+    ; */
+    border-radius: 30px;
+  }
+
+
+  .filter-category .filter-auction-text-span, .filter-icon-auction{
+    color: #7d7d7d;
+    /* padding: 0; */
+    font-weight: 300;
+    
+  }
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(156, 156, 156);
+    padding: 7px;
+    font-size: 0.95em;
+    line-height: 1.2em;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 10px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+  
+  /* Grid layout for all cards */
+  .auctions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+
+  p.auction-timer-all-auction{
+    color: gray;
+    font-size: .8rem;
+    margin-top:5px ;
+  }
+
+  .current-bid-all-auction {
+    /* font-weight: 600; */
+    color: rgb(116, 230, 63);
+    font-size: .8rem;
+    margin-top: 100px;
+    /* padding: 10px 7px 0; */
+  }
+
+
+
+  @media screen and (max-width: 887px) {
+    .card {
+      width: 35%;
+      /* height: 30%; */
+      /* overflow: hidden; */
+    }
+  
+    .auctions-grid-main {
+      /* flex-direction: column; */
+      overflow: hidden;
+      width: 100%;
+      /* margin: 0;
+      padding: 0; */
+      /* align-items: center; */
+      /* margin: auto; */
+    }
+  
+    .auction-filter {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .auction-filter label {
+      font-size: 0.9rem;
+    }
+    
+
+    .heading {
+      font-size: 1rem;
+    }
+    .author{
+        font-size: 1rem;
+    }
+    .current-bid-all-auction{
+        font-size: 1rem;
+    }
+   p.auction-timer-all-auction{
+        font-size: 1rem;
+    }
+  }
+
+
+    
+
+  .category-sidebar-main{
+    display: flex;
+    /* width: 95%; */
+    /* margin: 0 auto; */
+  }
+    /* Styling for the category sidebar */
+.category-sidebar {
+  width: 450px; /* Adjust width as necessary */
+  /* background-color: #f4f4f4; */
+  /* color: #fff; */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 1rem;
+  height: fit-content;
+  margin: 0 1rem;
+}
+
+.category-sidebar h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.category-sidebar label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.category-sidebar input[type="checkbox"] {
+  accent-color: #333;
+  width: 18px;
+  height: 18px;
+}
+
+.filter-category{
+  display: none;
+  position: absolute;
+  /* top: 390px; */
+  color: #fff;
+
+}
+
+.close-filter {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
+  margin-bottom: 0.5rem;
+}
+
+
+@media screen and (max-width: 835px) {
+  .card{
+    width: 40%;
+  }
+}
+
+
+@media screen and (min-width:985px){
+  .close-filter{
+    display: none;
+  }
+}
+/* .category-sidebar label:hover {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+} */
+
+/* .category-sidebar input[type="checkbox"]:checked + span {
+  color: #007bff;
+} */
+.close-filter:hover {
+  color: black;
+}
+/* Adjust layout when screen is smaller */
+@media screen and (max-width: 887px) {
+  .category-sidebar {
+    width: 100%; /* Make the sidebar full width on smaller screens */
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .category-sidebar h4 {
+    font-size: 1rem;
+  }
+
+  .category-sidebar label {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .category-sidebar {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+.filter-category {
+  display: none;
+}
+
+/* Media query for screen widths less than 985px */
+@media screen and (min-width: 985px) {
+  .auction-filter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-direction: row;
+  }
+
+  .category-sidebar {
+    display: block;
+    position: static;
+  }
+
+}
+
+
+/* Filters for smaller screens (popup style) */
+@media screen and (max-width: 985px) {
+
+  .filter-category {
+    display: block;
+    /* background-color: #eee; */
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    width: fit-content;
+    top: 620px;
+    left: 15px;
+  }
+
+
+  .category-sidebar label{
+    font-size: .7rem;
+  }
+
+
+  .category-sidebar.category-sidebar.filter-open{
+    width: fit-content;
+  }
+  .category-sidebar h4{
+    font-size: 1rem;
+  }
+
+  .auction-filter{
+    display: none;
+  }
+
+
+.auction-filter-2{
+  display: flex;
+  flex-direction: row;
+}
+
+
+  .category-sidebar input[type="checkbox"] {
+    accent-color: #333;
+    width: 10px;
+    height: 10px;
+  }
+  .category-sidebar {
+    display: none;
+    position: fixed;
+    top: 110px; 
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #212529;
+    z-index: 1000;
+    width: 20%;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    /* max-width: 400px; */
+  }
+
+  .category-sidebar.filter-open {
+    display: block;
+    margin: 0;
+  }
+}
+
+
+
+@media screen and (max-width: 918px) {
+  .filter-category{
+    top: 680px;
+  }
+}
+
+
+@media screen and (max-width: 890px) {
+  .filter-category{
+    top: 595px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 809px) {
+  .category-sidebar{
+    width: fit-content;
+  }
+
+  .filter-category{
+    margin-top: 25px;
+    top: 570px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  
+  .filter-category{
+    margin-top: 25px;
+    top: 450px;
+  }
+  
+}
+
+
+@media screen and (max-width: 481px){
+  .filter-category{
+    margin-top: 25px;
+    top: 389px;
+  }
+}
+
+
+@media screen and (max-width:540px) {
+  .category-sidebar.filter-open{
+    width: 60%;
+  }
+}
+
+
+@media screen and (max-width: 475px) {
+  .auction-filter-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 582px) {
+  .card {
+  width: 90%;
+  /* height: 30%; */
+ 
+  }
+
+  
+
+  .auction-filter {
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* margin-left: -10px ; */
+  }
+
+  .auction-filter label {
+  font-size: 0.6rem;
+  }
+
+  .heading {
+  font-size: 0.9rem;
+  }
+  .author{
+      font-size: 0.9rem;
+  }
+
+  .price-all-auction{
+      margin-top:5px ;
+  }
+  .current-bid-all-auction{
+     
+      font-size: 0.9rem;
+  }
+p.auction-timer-all-auction{
+      font-size: 0.9rem;
+  }
+}
+
+
+
+
+

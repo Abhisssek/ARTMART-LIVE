@@ -1,0 +1,47 @@
+.update-acc-content{
+    color: white;
+    /* width: 50%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+input{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+.prof-img-label, .old-pass-label, .new-pass-label{
+    margin-bottom: 1px;
+}
+
+.update-acc-content h1{
+    margin: 20px 0;
+}
+
+.password-btn , .update-btn{
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 768px){
+    .update-acc-content{
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px;
+    }
+
+    from input{
+        width: auto;
+    }
+    
+}

@@ -1,0 +1,74 @@
+/* AllUser.css */
+
+.alluser-container {
+    /* padding: 20px; */
+    background-color: #171716;
+    color: #ccc;
+  }
+  
+  .alluser-stats {
+    margin-bottom: 20px;
+  }
+  
+  .alluser-stats h2,
+  .alluser-stats h3 {
+    color: #ccc;
+  }
+  
+  .user-sections {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    flex-direction: row;
+    margin: 0 30px;
+  }
+  
+  .user-list {
+    flex: 1;
+  }
+  
+  .user-card {
+    border: .5px solid gray;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #212529;
+    overflow: hidden;
+  }
+  
+  .user-card p {
+    margin: 5px 0;
+    color: #ccc;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .action-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .action-buttons button:hover {
+    opacity: 0.8;
+  }
+
+
+
+
+  @media screen and (max-width: 675px){
+    .user-sections {
+        flex-direction: column;
+        margin: 0 10px;
+        
+    }
+    .user-card {
+        margin: 20px 10px;
+    }
+    
+  }
+
+  

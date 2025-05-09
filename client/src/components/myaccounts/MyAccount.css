@@ -1,0 +1,425 @@
+.my-account{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    /* border: 1px solid #e0e0e0; */
+    border-radius: 5px;
+    /* background-color: #f9f9f9; */
+    color: white;
+}
+
+
+.reg-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* align-items: center; */
+}
+
+
+.profile-header{
+    width: 40%;
+    text-align: start;
+}
+
+
+.login{
+    border: .5px solid gray;
+    border-radius: 5px;
+    padding: 30px;
+    width: 500px;
+    background-color: #212121;
+    height: fit-content;
+}
+
+.login h1{
+    /* text-align: center; */
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #e0e0e0;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+
+}
+
+.login form input{
+    padding: 13px 0;
+    padding-right: 90px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    /* margin-left: 5px; */
+    outline: none;
+
+    
+}
+
+.profile-header img {
+    width: 150px;
+    height: 150px;
+}
+
+
+.profile-header h2{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-bottom: 7px;
+    margin-left: 0;
+    text-align: start;
+}
+
+.email-log{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.password-log{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+.login-btn{
+    width: 30%;
+    margin-top: 20px;
+}
+
+
+
+
+.register{
+    border: .5px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #212121;
+
+    width: 500px;
+    /* height: 300px; */
+}
+
+.register h1{
+    /* text-align: center; */
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #e0e0e0;
+}
+
+.register form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+
+}
+
+.register form input{
+    padding: 13px 0;
+    padding-right: 90px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    /* margin-left: 5px; */
+    outline: none;
+
+    
+}
+
+
+.profileimg-reg{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.profilename-reg{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.username-reg{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.email-reg{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.profileimg-reg{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.password-reg{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.phone-reg{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.address-reg{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+.role-reg{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+select{
+    padding: 13px 0;
+    padding-right: 90px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    /* margin-left: 5px; */
+    outline: none;
+}
+
+.register-btn{
+    width: 30%;
+    margin-top: 20px;
+}
+
+
+.profile-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+
+.update-btn{
+    width: 63%;
+    margin-right: 20px;
+    font-size: .7rem;
+}
+
+.password-update-btn{
+    width: 44%;
+    margin-right: 20px;
+    font-size: .7rem;
+}
+
+
+
+.admin-buttons{
+    margin-top:50px ;
+}
+
+.admin-button{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.admin-btn{
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.auctioneer-button{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.auctioneer-buttons{
+    margin-top: 50px ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+
+.auctioneer-buttons-container{
+    margin-top: 30px;
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+    .my-account {
+        text-align: center;
+    }
+    
+    .profile-container {
+        margin-top: 20px;
+        gap: 30px;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: column; /* Stack items vertically */
+    }
+    
+    .profile-header {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .profile-header h2 {
+        text-align: center;
+    }
+
+    .auctioneer-button{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .update-acc {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .update-btn, .password-update-btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .reg-login {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .login, .register {
+        width: 90%;
+    }
+
+    .login-btn, .register-btn {
+        width: 100%;
+    }
+    .email{
+        /* font-size: .7rem; */
+    }
+}
+
+
+@media screen and (max-width: 789px){
+    .my-auction-btn{
+        margin-bottom: 10px;
+    }
+
+}
+
+@media  screen and (max-width: 1170px) {
+    .profile-header img {
+        width: 150px;
+        height: 150px;
+    }
+   
+    .reg-login{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .login{
+        width: auto;
+    }
+    
+    .register{
+        width: auto;
+    }
+
+    form input{
+        width: 100%;
+    }
+
+    .register-btn{
+        width: auto;
+    }
+    .login-btn{
+        width: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .profile-header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .my-account{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .my-auction-btn{
+        margin-bottom: 10px;
+    }
+
+
+    .auctioneer-buttons{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+
+    .profile-header{
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-container {
+        padding: 10px;
+        width: 105%;
+    }
+    .email{
+        font-size: .7rem;
+    }
+
+    .reg-login {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .login, .register {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .login-btn, .register-btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

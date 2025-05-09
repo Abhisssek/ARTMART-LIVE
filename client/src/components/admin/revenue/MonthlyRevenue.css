@@ -1,0 +1,40 @@
+.monthly-revenue-container {
+    color: #fff;
+    /* background-color: #111; */
+    padding: 20px;
+    border-radius: 10px;
+    /* margin: 50px; */
+  }
+  
+  .revenue-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    /* align-items: center; */
+    /* margin: auto; */
+    justify-content: space-around;
+  }
+
+  .revenue-list-container{
+    align-self: center;
+  }
+  
+  .revenue-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    /* margin: 8px auto; */
+  }
+  
+  .month {
+    font-weight: bold;
+    color: #ccc;
+  }
+  
+  .amount {
+    color: #eee;
+  }
+  

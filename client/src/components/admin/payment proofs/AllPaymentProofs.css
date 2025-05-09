@@ -1,0 +1,49 @@
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    /* border-bottom: 1px solid #444; */
+    color: #ccc;
+    padding-bottom: 8px;
+  }
+
+  .payment-proof-con{
+    margin: 50px 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  
+  .proof-card-main {
+    background-color: #111;
+    border: 1px solid #444;
+    border-radius: 12px;
+    padding: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .proof-card-main:hover {
+    background-color: #222;
+  }
+  
+  .proof-card-main p {
+    margin-bottom: 8px;
+  }
+  
+  .proof-card-main p  {
+    font-weight: 600;
+    color: #ccccccbe;
+  }
+
+
+  
+  .unauthorized {
+    color: red;
+    text-align: center;
+    margin-top: 40px;
+  }
+  

@@ -1,0 +1,238 @@
+.announcement-wrapper {
+    /* max-width: 720px; */
+    margin: 40px auto;
+    /* padding: 20px; */
+    font-family: "Segoe UI", sans-serif;
+    margin-top: 0;
+    padding-top: 0px;
+  }
+  
+  .announcement-loading {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+  }
+  
+  .announcement-create-box {
+    background: #212529;
+
+    margin: auto;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    border: 1px solid #cfe2ff;
+    margin-bottom: 32px;
+    width: 50%;
+    margin-top: 40px;
+    /* align-items: center; */
+    /* text-align: center; */
+    
+  }
+  
+  .announcement-title {
+    font-size: 22px;
+    color: #1d4ed8;
+    margin-bottom: 16px;
+  }
+  
+  .announcement-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .announcement-textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .announcement-textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px #dbeafe;
+    outline: none;
+  }
+  
+  .announcement-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .announcement-button:hover {
+    background-color: #1e40af;
+  }
+  
+  .announcement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .announcement-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+  }
+  
+  .announcement-empty {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .announcement-item {
+    background: #f3f4f6;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .announcement-meta {
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+    margin-top: 8px;
+  }
+
+
+  .announcement-input {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .announcement-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px #dbeafe;
+    outline: none;
+  }
+
+  
+  .announcement-wrapper {
+    /* padding: 2rem; */
+  }
+  
+  .announcement-create-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .announcement-banner {
+    position: relative;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 10px; */
+    margin-bottom: 2rem;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .banner-content {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+    backdrop-filter: blur(4px);
+  }
+  
+  .announcement-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  .announcement-card {
+    flex: 1 1 calc(33.333% - 1rem);
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    min-width: 250px;
+  }
+  
+  .announcement-meta {
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: 0.5rem;
+  }
+  .announcement-banner {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 10px; */
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .banner-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    padding: 2rem;
+    /* border-bottom-left-radius: 10px; */
+    /* border-bottom-right-radius: 10px; */
+  }
+  
+  .announcement-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .announcement-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    width: calc(33.333% - 1rem);
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .card-overlay {
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  .announcement-meta {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #ddd;
+  }
+    
+  @media screen and (max-width: 872px) {
+    .announcement-create-box{
+        width: 80%;
+    }
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .announcement-create-box{
+        width: 90%;
+    }
+    
+  }

@@ -1,0 +1,91 @@
+/* MyBids.css */
+.mybids-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #212529;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+  }
+  
+  .mybids-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .mybids-table th,
+  .mybids-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .mybids-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .mybids-table tr:nth-child(even) {
+    /* background-color: #f2f2f2; */
+  }
+  
+  .mybids-table tr:hover {
+    /* background-color: #ddd; */
+  }
+  
+
+  @media screen and (max-width: 853px) {
+    .mybids-container {
+        padding: 10px;
+        margin: 20px auto;
+        max-width: 80%;
+    }
+  
+    .mybids-table th,
+    .mybids-table td {
+        padding: 5px;
+    }
+  
+    .mybids-table th {
+        font-size: 14px;
+    }
+  
+    .mybids-table td {
+        font-size: 12px;
+    }
+  
+    .mybids-table {
+        font-size: 12px;
+    }
+  }
+
+
+  @media  screen and (max-width: 525px) {
+    .mybids-container {
+        padding: 5px;
+        margin: 10px auto;
+        max-width: 90%;
+    }
+  
+    .mybids-table th,
+    .mybids-table td {
+        padding: 3px;
+    }
+  
+    .mybids-table th {
+        font-size: 12px;
+    }
+  
+    .mybids-table td {
+        font-size: 10px;
+    }
+  
+    .mybids-table {
+        font-size: 10px;
+        width: 90%;
+        margin: auto;
+    }
+  }

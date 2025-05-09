@@ -1,0 +1,138 @@
+.commission-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .auctioneer-commission-proof{
+    border: .5px solid gainsboro;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    
+  }
+
+
+
+  .commission-proof-container{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+
+  .commission-proof-container-2 {
+    width: 50%;
+    
+  }
+  
+  .commission-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .commission-user-info p {
+    margin: 5px 0;
+    color: #ccc;
+    font-size: 20px;
+  }
+  
+  .commission-success {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+  }
+  
+  .commission-form label {
+    font-weight: 500;
+  }
+  
+  .commission-form input[type="number"],
+  .commission-form textarea,
+  .commission-form input[type="file"] {
+    width: 120%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+
+  
+  
+  
+
+  .auctioneer-commission-input{
+    width: 30%;
+
+  }
+
+  .commission-proof-container-2{
+    width: 43%;
+  }
+  .commission-proof-container-3{
+    width: 43%;
+  }
+
+  .commission-proof-container-3-main{
+    width: 100%;
+  }
+
+  .auctioneer-commission-input-parent{
+    width: 70%;
+  }
+
+
+  @media  screen and (max-width: 1082px) {
+    .commission-proof-container {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .auctioneer-commission-input-parent{
+      width: 90%;
+    }
+    .auctioneer-commission-proof{
+      width: 100%;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+  
+    .commission-proof-container-2 {
+      width: 100%;
+    }
+    .commission-proof-container-3 {
+      width: 70%;
+      
+    }
+
+    .commission-proof-container-3 h3{
+      text-align: center;
+    }
+  
+    .auctioneer-commission-proof {
+      width: 90%;
+    }
+  
+    .auctioneer-commission-input {
+      width: 100%;
+    }
+  
+    .commission-title {
+      font-size: 20px;
+    }
+  
+    .commission-user-info p {
+      font-size: 18px;
+    }
+  
+    .commission-form input[type="number"],
+    .commission-form textarea,
+    .commission-form input[type="file"] {
+      width: 100%;
+    }
+    
+  }

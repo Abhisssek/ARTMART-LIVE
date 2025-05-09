@@ -1,0 +1,103 @@
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    /* border-bottom: 1px solid #444; */
+    color: #ccc;
+    padding-bottom: 8px;
+  }
+
+  .payment-proof-con{
+    margin: 50px 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  
+  .single-proof-card-main {
+    background-color: #111;
+
+  }
+  
+  .card:hover {
+    background-color: #222;
+  }
+  
+  .single-proof-card-main p {
+    margin-bottom: 8px;
+  }
+  
+  .single-proof-card-main p  {
+    font-weight: 600;
+    color: #ccccccbe;
+    font-size: 20px;
+  }
+
+  .single-proof-card-main-img{
+    width: 50%;
+  }
+
+
+  
+  .unauthorized {
+    color: red;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+.status-buttons{
+    display: flex;
+    /* flex-direction: row; */
+    gap: 10px;
+}
+
+
+.single-proof-card-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 12px;
+    padding: 40px;
+    transition: background-color 0.3s ease;
+    background-color: #111;
+    margin: 90px 0;
+}
+
+
+.single-proof-title{
+    margin-bottom: -60px;
+    margin-top: 40px;
+    color: #ccc;
+}
+
+@media screen and (max-width:675px){
+    .single-proof-card-main-img{
+        width: 100%;
+    }
+    .status-buttons{
+        flex-direction: column;
+    }
+    .status-buttons button{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 875px){
+  .single-proof-card-main-img{
+    width: 100%;
+}
+    .single-proof-card-1{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+    .single-proof-title{
+        margin-bottom: -20px;
+    }
+}

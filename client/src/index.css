@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #171716;
+  /* overflow: hidden; */
+  /* height: 11111px; */
+}
+
+.Toastify__toast-container {
+  z-index: 9999 !important;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+
+  list-style-type: none;
+}
+
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #000000;
+  border-top: 3px solid #34cadb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.main-loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #FFF;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+.container-2{
+  max-width: 1450px;
+  margin: 0 auto;
+  background-color: #181818;
+}
+
+
+.container-3{
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+
+.primary-btn{
+  background-color: white;
+  color: black;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+  border: .5px solid gray;
+
+}
+
+.secondary-btn{
+  background-color: rgb(167, 0, 0);
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+  border: .5px solid gray;
+
+}
+
+.secondary-btn:hover{
+  background-color: black;
+  color: white;
+  box-shadow: #212529 0px 0px 10px;
+  border: .5px solid gray;
+}
+
+.primary-btn:hover{
+  background-color: black;
+  color: white;
+  box-shadow: #212529 0px 0px 10px;
+  border: .5px solid gray;
+}
+
+

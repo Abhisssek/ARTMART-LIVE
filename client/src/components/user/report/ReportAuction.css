@@ -1,0 +1,77 @@
+.report-page {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #212529;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .report-page h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .report-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .report-form select,
+  .report-form textarea,
+  .report-form input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  
+  .report-form textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .report-form button {
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .report-form button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .report-form button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+
+
+
+  @media screen and (max-width: 526px){
+    .report-page {
+        /* margin: 40px auto;
+         */
+         width: 90%;
+        padding: 20px;
+    }
+    
+  }

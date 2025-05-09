@@ -1,0 +1,89 @@
+/* List format, dark theme */
+.bidded-auctions-container {
+  padding: 40px;
+  background-color: #121212;
+  min-height: 100vh;
+  color: #eee;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.separator {
+  border: none;
+  border-top: 2px solid #333;
+  margin-bottom: 30px;
+}
+
+.loading, .no-auctions {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+.auction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auction-item {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.auction-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.auction-item p {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: #ccc;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.won {
+  color: #4caf50;
+}
+
+.status.lost {
+  color: #f44336;
+}
+
+.status.ongoing {
+  color: #ff9800;
+}
+.pay-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pay-btn:hover {
+  background-color: #45a049;
+}
+
+.payment-completed-payment-session {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
