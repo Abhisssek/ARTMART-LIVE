@@ -38,7 +38,7 @@ export const Navbar = () => {
   useEffect(() => {
     const fetchUserRole = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/v1/user/profile", {
+        const res = await fetch("https://artmart-rr3n.onrender.com/api/v1/user/profile", {
           credentials: "include",
         });
         const data = await res.json();
@@ -58,7 +58,7 @@ export const Navbar = () => {
     const fetchNotifications = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/api/v1/user/get-notification",
+          "https://artmart-rr3n.onrender.com/api/v1/user/get-notification",
           {
             credentials: "include",
             headers: {
@@ -82,7 +82,7 @@ export const Navbar = () => {
   const handleDelete = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/v1/user/delete-notification/${id}`,
+        `https://artmart-rr3n.onrender.com/api/v1/user/delete-notification/${id}`,
         {
           method: "DELETE",
           credentials: "include",

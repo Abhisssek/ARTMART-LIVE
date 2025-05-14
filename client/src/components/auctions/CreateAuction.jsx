@@ -53,7 +53,7 @@ export const CreateAuction = () => {
         formDataToSend.append("images", image);
       });
 
-      const response = await fetch("http://localhost:3000/api/v1/auction/new", {
+      const response = await fetch("https://artmart-rr3n.onrender.com/api/v1/auction/new", {
         method: "POST",
         body: formDataToSend,
         credentials: "include",

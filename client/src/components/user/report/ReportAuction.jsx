@@ -23,7 +23,7 @@ export const ReportAuction = () => {
 
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:3000/api/v1/report-auction/report/${auctionId}`, {
+      const res = await fetch(`https://artmart-rr3n.onrender.com/api/v1/report-auction/report/${auctionId}`, {
         method: "POST",
         credentials: "include",
         headers: {

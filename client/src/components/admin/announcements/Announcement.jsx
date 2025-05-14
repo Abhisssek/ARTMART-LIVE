@@ -37,7 +37,7 @@ export const Announcement = () => {
     const fetchProfile = async () => {
       setLoading(true);
       try {
-        const res = await fetch("http://localhost:3000/api/v1/user/profile", {
+        const res = await fetch("https://artmart-rr3n.onrender.com/api/v1/user/profile", {
           method: "GET",
           credentials: "include",
         });
@@ -52,7 +52,7 @@ export const Announcement = () => {
     const fetchAnnouncements = async () => {
       try {
         const res = await fetch(
-          "http://localhost:3000/api/v1/user/get-announcements",
+          "https://artmart-rr3n.onrender.com/api/v1/user/get-announcements",
           {
             method: "GET",
             credentials: "include",
@@ -103,7 +103,7 @@ export const Announcement = () => {
     try {
       setButtonLoading(true);
       const res = await fetch(
-        "http://localhost:3000/api/v1/admin/make-announcement",
+        "https://artmart-rr3n.onrender.com/api/v1/admin/make-announcement",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

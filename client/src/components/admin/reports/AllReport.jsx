@@ -23,7 +23,7 @@ export const AllReport = () => {
   const fetchProfile = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3000/api/v1/user/profile",
+        "https://artmart-rr3n.onrender.com/api/v1/user/profile",
         {
           method: "GET",
           credentials: "include",
@@ -46,7 +46,7 @@ export const AllReport = () => {
  
   const fetchReports = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/v1/report-auction/reports", {
+      const res = await fetch("https://artmart-rr3n.onrender.com/api/v1/report-auction/reports", {
         credentials: "include",
       });
       const data = await res.json();
@@ -61,7 +61,7 @@ export const AllReport = () => {
 
   const handleStatusChange = async (reportId, newStatus) => {
     try {
-      const res = await fetch(`http://localhost:3000/api/v1/report-auction/update/report/${reportId}`, {
+      const res = await fetch(`https://artmart-rr3n.onrender.com/api/v1/report-auction/update/report/${reportId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -90,7 +90,7 @@ export const AllReport = () => {
     if (!window.confirm("Are you sure you want to delete this report?")) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/api/v1/report-auction/delete/report/${reportId}`, {
+      const res = await fetch(`https://artmart-rr3n.onrender.com/api/v1/report-auction/delete/report/${reportId}`, {
         method: "DELETE",
         credentials: "include",
       });

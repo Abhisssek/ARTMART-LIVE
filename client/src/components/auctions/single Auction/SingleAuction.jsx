@@ -13,7 +13,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
 // import { createIndexes } from "../../../../../backend/models/auctionSchema";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://artmart-rr3n.onrender.com");
 
 export const SingleAuction = () => {
   const { id } = useParams();
@@ -38,7 +38,7 @@ export const SingleAuction = () => {
   // ✅ Fetch auction details
   const refetchAuction = async () => {
     try {
-      const res = await fetch(`http://localhost:3000/api/v1/auction/${id}`);
+      const res = await fetch(`https://artmart-rr3n.onrender.com/api/v1/auction/${id}`);
       if (!res.ok) throw new Error(`HTTP Error! Status: ${res.status}`);
       const data = await res.json();
 
@@ -93,7 +93,7 @@ export const SingleAuction = () => {
     const fetchProfile = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/api/v1/user/profile",
+          "https://artmart-rr3n.onrender.com/api/v1/user/profile",
           {
             method: "GET",
             credentials: "include",
@@ -170,7 +170,7 @@ export const SingleAuction = () => {
   const handleNotifyMe = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/v1/user/notify/${id}`,
+        `https://artmart-rr3n.onrender.com/api/v1/user/notify/${id}`,
         {
           method: "POST",
           credentials: "include", // important if using cookies for auth
@@ -217,7 +217,7 @@ export const SingleAuction = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `http://localhost:3000/api/v1/bid/place/${auction._id}`,
+        `https://artmart-rr3n.onrender.com/api/v1/bid/place/${auction._id}`,
         {
           method: "POST",
           headers: {
@@ -261,7 +261,7 @@ export const SingleAuction = () => {
         setAuctionEnded(true);
 
         try {
-          const res = await fetch(`http://localhost:3000/api/v1/auction/${id}`);
+          const res = await fetch(`https://artmart-rr3n.onrender.com/api/v1/auction/${id}`);
           const data = await res.json();
           const updatedAuction = data.auctionItem;
 

@@ -32,7 +32,7 @@ export const RepublishAuction = () => {
   const fetchAuctionDetails = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/v1/auction/${auctionId}`,
+        `https://artmart-rr3n.onrender.com/api/v1/auction/${auctionId}`,
         { method: "GET", credentials: "include" }
       );
 
@@ -94,7 +94,7 @@ export const RepublishAuction = () => {
       
   
       const response = await fetch(
-        `http://localhost:3000/api/v1/auction/republish/${auctionId}`,
+        `https://artmart-rr3n.onrender.com/api/v1/auction/republish/${auctionId}`,
         {
           method: "PUT",
           headers: {

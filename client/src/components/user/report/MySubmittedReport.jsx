@@ -8,7 +8,7 @@ export const MySubmittedReport = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/v1/report-auction/my-submitted-report", {
+    fetch("https://artmart-rr3n.onrender.com/api/v1/report-auction/my-submitted-report", {
       method: "GET",
       credentials: "include",
       headers: {

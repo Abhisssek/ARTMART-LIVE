@@ -13,7 +13,7 @@ import { ArtBannerTwo } from "../../extra component/ArtBannerTwo";
 import { Footer } from "../../footer/Footer";
 
 // Initialize Socket.io connection
-const socket = io("http://localhost:3000");
+const socket = io("https://artmart-rr3n.onrender.com");
 
 export const AllAuctions = () => {
   const [auctions, setAuctions] = useState([]);
@@ -50,7 +50,7 @@ export const AllAuctions = () => {
       setLoading(true); // Show loader
 
       const response = await fetch(
-        "http://localhost:3000/api/v1/auction/allitems",
+        "https://artmart-rr3n.onrender.com/api/v1/auction/allitems",
         {
           method: "GET",
           credentials: "include",
@@ -87,7 +87,7 @@ export const AllAuctions = () => {
   const fetchProfile = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3000/api/v1/user/profile",
+        "https://artmart-rr3n.onrender.com/api/v1/user/profile",
         {
           method: "GET",
           credentials: "include",

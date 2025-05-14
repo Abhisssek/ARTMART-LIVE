@@ -15,7 +15,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 
 // Initialize socket
-const socket = io("http://localhost:3000");
+const socket = io("https://artmart-rr3n.onrender.com");
 
 export const AllAuctionsAdmin = () => {
   const [auctions, setAuctions] = useState([]);
@@ -50,7 +50,7 @@ export const AllAuctionsAdmin = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        "http://localhost:3000/api/v1/admin/all-auctions-admin",
+        "https://artmart-rr3n.onrender.com/api/v1/admin/all-auctions-admin",
         {
           method: "GET",
           credentials: "include",
@@ -89,7 +89,7 @@ export const AllAuctionsAdmin = () => {
   const fetchProfile = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3000/api/v1/user/profile",
+        "https://artmart-rr3n.onrender.com/api/v1/user/profile",
         {
           method: "GET",
           credentials: "include",
@@ -111,7 +111,7 @@ export const AllAuctionsAdmin = () => {
 
   const toggleBlacklist = async (auctionId) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/v1/admin/blacklist/${auctionId}`, {
+      const response = await fetch(`https://artmart-rr3n.onrender.com/api/v1/admin/blacklist/${auctionId}`, {
         method: "PATCH", // or "POST" depending on your API
         credentials: "include",
         headers: {

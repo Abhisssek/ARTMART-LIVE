@@ -12,7 +12,7 @@ import {
 } from "../../../../utils/AuctionUtils";
 
 // Initialize Socket.io connection
-const socket = io("http://localhost:3000");
+const socket = io("https://artmart-rr3n.onrender.com");
 
 export const MyAuctions = () => {
   const [auctions, setAuctions] = useState([]);
@@ -32,7 +32,7 @@ export const MyAuctions = () => {
     try {
       setInitialLoading(true); // Set loading state to true
       const response = await fetch(
-        "http://localhost:3000/api/v1/auction/myauctions",
+        "https://artmart-rr3n.onrender.com/api/v1/auction/myauctions",
         {
           method: "GET",
           credentials: "include",
@@ -68,7 +68,7 @@ export const MyAuctions = () => {
   const fetchProfile = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3000/api/v1/user/profile",
+        "https://artmart-rr3n.onrender.com/api/v1/user/profile",
         {
           method: "GET",
           credentials: "include",
@@ -107,7 +107,7 @@ export const MyAuctions = () => {
       setLoadingStates((prev) => ({ ...prev, [auctionId]: true }));
 
       const response = await fetch(
-        `http://localhost:3000/api/v1/auction/delete/${auctionId}`,
+        `https://artmart-rr3n.onrender.com/api/v1/auction/delete/${auctionId}`,
         {
           method: "DELETE",
           credentials: "include",

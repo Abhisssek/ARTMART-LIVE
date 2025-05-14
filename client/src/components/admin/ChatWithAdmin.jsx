@@ -21,7 +21,7 @@ export const ChatWithAdmin = () => {
   useEffect(() => {
     const fetchUserRole = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/v1/user/profile", {
+        const res = await fetch("https://artmart-rr3n.onrender.com/api/v1/user/profile", {
           credentials: "include",
         });
         const data = await res.json();
@@ -50,7 +50,7 @@ export const ChatWithAdmin = () => {
 
   useEffect(() => {
     if (role) {
-      const socket = io("http://localhost:3000", {
+      const socket = io("https://artmart-rr3n.onrender.com", {
         query: { role },
       });
 
@@ -75,7 +75,7 @@ export const ChatWithAdmin = () => {
   useEffect(() => {
     const fetchChatHistory = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/v1/user/get-chats", {
+        const res = await fetch("https://artmart-rr3n.onrender.com/api/v1/user/get-chats", {
           credentials: "include",
           headers: {
             "Content-Type": "application/json",
@@ -130,7 +130,7 @@ export const ChatWithAdmin = () => {
   const fetchUserProfile = async (selectedUserId) => {
     try {
       const res = await fetch(
-        `http://localhost:3000/api/v1/admin/user-profile/${selectedUserId}`,
+        `https://artmart-rr3n.onrender.com/api/v1/admin/user-profile/${selectedUserId}`,
         {
           credentials: "include",
         }
@@ -155,7 +155,7 @@ export const ChatWithAdmin = () => {
   const clearChats = async () => {
     try {
       const res = await fetch(
-        `http://localhost:3000/api/v1/admin/delete-all-chats`,
+        `https://artmart-rr3n.onrender.com/api/v1/admin/delete-all-chats`,
         {
           method: "DELETE",
           credentials: "include",

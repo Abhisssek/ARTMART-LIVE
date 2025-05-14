@@ -36,7 +36,7 @@ export const MonthlyRevenue = () => {
   const fetchRevenue = async () => {
     try {
       // Admin check
-      const userRes = await fetch("http://localhost:3000/api/v1/user/profile", {
+      const userRes = await fetch("https://artmart-rr3n.onrender.com/api/v1/user/profile", {
         credentials: "include",
       });
       const userData = await userRes.json();
@@ -46,7 +46,7 @@ export const MonthlyRevenue = () => {
       }
 
       const res = await fetch(
-        "http://localhost:3000/api/v1/admin/monthly-revenue",
+        "https://artmart-rr3n.onrender.com/api/v1/admin/monthly-revenue",
         {
           credentials: "include",
         }

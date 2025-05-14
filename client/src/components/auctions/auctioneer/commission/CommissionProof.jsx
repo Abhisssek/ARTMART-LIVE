@@ -18,14 +18,14 @@ export const CommissionProof = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const userRes = await fetch("http://localhost:3000/api/v1/user/profile", {
+        const userRes = await fetch("https://artmart-rr3n.onrender.com/api/v1/user/profile", {
           credentials: "include",
         });
         const userData = await userRes.json();
         setUser(userData.user);
         setAmount(userData.user.unpaidCommission);
 
-        const proofRes = await fetch("http://localhost:3000/api/v1/commission/my-proof", {
+        const proofRes = await fetch("https://artmart-rr3n.onrender.com/api/v1/commission/my-proof", {
           credentials: "include",
         });
         const proofData = await proofRes.json();
@@ -84,7 +84,7 @@ export const CommissionProof = () => {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:3000/api/v1/commission/proof", {
+      const res = await fetch("https://artmart-rr3n.onrender.com/api/v1/commission/proof", {
         method: "POST",
         body: formData,
         credentials: "include",
@@ -274,7 +274,7 @@ export const CommissionProof = () => {
                     </p>
                     {proof.image && (
                       <img
-                        src={`http://localhost:3000/uploads/${proof.image}`}
+                        src={`https://artmart-rr3n.onrender.com/uploads/${proof.image}`}
                         alt="proof"
                         style={{
                           maxWidth: "100px",

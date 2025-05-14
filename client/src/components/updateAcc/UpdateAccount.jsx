@@ -28,7 +28,7 @@ export const UpdateAccount = () => {
       try {
         setInitialLoading(true); // ✅ Start loading
         const response = await fetch(
-          "http://localhost:3000/api/v1/user/profile",
+          "https://artmart-rr3n.onrender.com/api/v1/user/profile",
           {
             method: "GET",
             credentials: "include", // ✅ Send cookies
@@ -63,7 +63,7 @@ export const UpdateAccount = () => {
       formData.append("address", address);
 
       const response = await fetch(
-        "http://localhost:3000/api/v1/user/profile/update",
+        "https://artmart-rr3n.onrender.com/api/v1/user/profile/update",
         {
           method: "PUT",
           credentials: "include",
@@ -111,7 +111,7 @@ export const UpdateAccount = () => {
     try {
       setPasswordLoading(true); // ✅ Start loading
       const response = await fetch(
-        "http://localhost:3000/api/v1/user/password/update",
+        "https://artmart-rr3n.onrender.com/api/v1/user/password/update",
         {
           method: "PUT",
           credentials: "include",

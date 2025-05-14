@@ -17,7 +17,7 @@ export const SinglePaymentProof = () => {
         // Check if user is admin
         setLoading(true);
         const userRes = await fetch(
-          "http://localhost:3000/api/v1/user/profile",
+          "https://artmart-rr3n.onrender.com/api/v1/user/profile",
           {
             credentials: "include",
           }
@@ -33,7 +33,7 @@ export const SinglePaymentProof = () => {
 
         // Fetch specific payment proof
         const res = await fetch(
-          `http://localhost:3000/api/v1/admin/paymentproof/${id}`,
+          `https://artmart-rr3n.onrender.com/api/v1/admin/paymentproof/${id}`,
           {
             credentials: "include",
           }
@@ -56,7 +56,7 @@ export const SinglePaymentProof = () => {
       setMessage("");
 
       const res = await fetch(
-        `http://localhost:3000/api/v1/admin/paymentproof/status/update/${id}`,
+        `https://artmart-rr3n.onrender.com/api/v1/admin/paymentproof/status/update/${id}`,
         {
           method: "PUT",
           credentials: "include",

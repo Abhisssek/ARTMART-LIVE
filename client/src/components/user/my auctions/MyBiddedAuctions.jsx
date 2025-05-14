@@ -16,7 +16,7 @@ export const MyBiddedAuctions = () => {
     const checkAuth = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/api/v1/user/profile",
+          "https://artmart-rr3n.onrender.com/api/v1/user/profile",
           {
             method: "GET",
             credentials: "include",
@@ -41,7 +41,7 @@ export const MyBiddedAuctions = () => {
 
   const fetchBiddedAuctions = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/v1/user/my-bidded-auctions", {
+      const res = await fetch("https://artmart-rr3n.onrender.com/api/v1/user/my-bidded-auctions", {
         credentials: "include",
       });
       const data = await res.json();
@@ -77,7 +77,7 @@ export const MyBiddedAuctions = () => {
 
   const handlePayment = async (auctionId, bidAmount) => {
     try {
-      const res = await fetch("http://localhost:3000/api/v1/payment/create-checkout-session", {
+      const res = await fetch("https://artmart-rr3n.onrender.com/api/v1/payment/create-checkout-session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

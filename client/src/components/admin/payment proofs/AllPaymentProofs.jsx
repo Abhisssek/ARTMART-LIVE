@@ -14,7 +14,7 @@ export const AllPaymentProofs = () => {
     const fetchProofs = async () => {
       try {
         setLoading(true);
-        const userRes = await fetch("http://localhost:3000/api/v1/user/profile", {
+        const userRes = await fetch("https://artmart-rr3n.onrender.com/api/v1/user/profile", {
           credentials: "include",
         });
         const userData = await userRes.json();
@@ -28,7 +28,7 @@ export const AllPaymentProofs = () => {
         setIsAdmin(true);
         setLoading(false);
 
-        const res = await fetch("http://localhost:3000/api/v1/admin/paymentproofs", {
+        const res = await fetch("https://artmart-rr3n.onrender.com/api/v1/admin/paymentproofs", {
           credentials: "include",
         });
         const data = await res.json();
@@ -52,7 +52,7 @@ export const AllPaymentProofs = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/v1/user/profile", {
+        const res = await fetch("https://artmart-rr3n.onrender.com/api/v1/user/profile", {
           credentials: "include",
         });
         const data = await res.json();

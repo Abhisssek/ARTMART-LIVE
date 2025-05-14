@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { useNavigate, Link } from "react-router-dom";
 import "./MyAccount.css";
 import { io } from "socket.io-client";
-const socket = io("http://localhost:3000", {
+const socket = io("https://artmart-rr3n.onrender.com", {
   query: { role: "admin" }, // Pass role in handshake
 });
 
@@ -42,7 +42,7 @@ export const MyAccount = () => {
     const checkAuth = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/api/v1/user/profile",
+          "https://artmart-rr3n.onrender.com/api/v1/user/profile",
           {
             method: "GET",
             credentials: "include",
@@ -69,7 +69,7 @@ export const MyAccount = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          "http://localhost:3000/api/v1/user/profile",
+          "https://artmart-rr3n.onrender.com/api/v1/user/profile",
           {
             method: "GET",
             credentials: "include",
@@ -121,7 +121,7 @@ export const MyAccount = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/api/v1/user/register",
+        "https://artmart-rr3n.onrender.com/api/v1/user/register",
         {
           method: "POST",
           body: formData,
@@ -158,7 +158,7 @@ export const MyAccount = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/api/v1/user/login", {
+      const response = await fetch("https://artmart-rr3n.onrender.com/api/v1/user/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -183,7 +183,7 @@ export const MyAccount = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/v1/user/logout", {
+      const response = await fetch("https://artmart-rr3n.onrender.com/api/v1/user/logout", {
         method: "GET",
         credentials: "include",
       });
@@ -203,7 +203,7 @@ export const MyAccount = () => {
 
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/v1/admin/unread-count/admin",{
+    fetch("https://artmart-rr3n.onrender.com/api/v1/admin/unread-count/admin",{
       credentials: "include",
       headers: {
         "Content-Type": "application/json",
@@ -215,7 +215,7 @@ export const MyAccount = () => {
 
 
   // useEffect(() => {
-  //   fetch("http://localhost:3000/api/v1/report-auction/report-count",{
+  //   fetch("https://artmart-rr3n.onrender.com/api/v1/report-auction/report-count",{
   //     credentials: "include",
   //     headers: {
   //       "Content-Type": "application/json",
@@ -237,7 +237,7 @@ export const MyAccount = () => {
 
   const handleViewMessages = async () => {
     // Mark messages as read when admin views them
-    await fetch("http://localhost:3000/api/v1/admin/chat/mark-read", {
+    await fetch("https://artmart-rr3n.onrender.com/api/v1/admin/chat/mark-read", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ role: "admin" }),

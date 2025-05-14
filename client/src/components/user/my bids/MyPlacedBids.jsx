@@ -9,7 +9,7 @@ export const MyPlacedBids = () => {
     const navigate = useNavigate();
   
     useEffect(() => {
-      fetch('http://localhost:3000/api/v1/user/my-placed-bids', {
+      fetch('https://artmart-rr3n.onrender.com/api/v1/user/my-placed-bids', {
         credentials: 'include',
       })
         .then(response => response.json())
