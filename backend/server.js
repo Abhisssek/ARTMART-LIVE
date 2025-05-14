@@ -116,11 +116,11 @@ io.on("connection", (socket) => {
 const path = require('path');
 
 // Serve static files
-app.use(express.static(path.join(__dirname, 'build'))); // or 'dist' for Vite
+app.use(express.static(path.join(__dirname, 'dist'))); // or 'dist' for Vite
 
 // For any other route, serve index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html')); // or 'dist'
+  res.sendFile(path.join(__dirname, 'dist', 'index.html')); // or 'dist'
 });
 
 
