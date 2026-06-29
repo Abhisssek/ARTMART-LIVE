@@ -13,25 +13,12 @@ export const Hero = () => {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
-            src="https://artmart-wp.b-cdn.net/wp-content/uploads/2024/12/hero-banner-1.webp"
+            src="client/public/img/af4bb7662179f9d7ba691f831a88189d.jpg"
             className="d-block"
             alt="Slide 1"
           />
         </div>
-        <div className="carousel-item">
-          <img
-            src="https://artmart-wp.b-cdn.net/wp-content/uploads/2024/12/hero-banner-2.webp"
-            className="d-block"
-            alt="Slide 2"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://artmart-wp.b-cdn.net/wp-content/uploads/2024/12/hero-banner-3.webp"
-            className="d-block"
-            alt="Slide 3"
-          />
-        </div>
+       
       </div>
 
       {/* Carousel Controls */}
