@@ -18,6 +18,7 @@ export const Hero = () => {
             alt="Slide 1"
           />
         </div>
+        
       </div>
 
       {/* Carousel Controls */}
