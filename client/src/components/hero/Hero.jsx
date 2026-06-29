@@ -13,7 +13,7 @@ export const Hero = () => {
       <div className="carousel-inner">
         <div className="carousel-item">
   <img
-    src="/img/af4bb7662179f9d7ba691f831a88189d.jpg"
+    src="/img/banner1.jpg"
     className="d-block w-100"
     
   />
