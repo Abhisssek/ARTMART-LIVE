@@ -13,6 +13,7 @@
 
 .carousel-item img{
    opacity: 0.4;
+   width: 100%;
 }
 
 .hero-text{

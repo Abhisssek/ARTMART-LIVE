@@ -13,23 +13,9 @@ export const Hero = () => {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
-            src="https://artmart-wp.b-cdn.net/wp-content/uploads/2024/12/hero-banner-1.webp"
+            src="/img/banner1.jpg"
             className="d-block"
             alt="Slide 1"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://artmart-wp.b-cdn.net/wp-content/uploads/2024/12/hero-banner-2.webp"
-            className="d-block"
-            alt="Slide 2"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://artmart-wp.b-cdn.net/wp-content/uploads/2024/12/hero-banner-3.webp"
-            className="d-block"
-            alt="Slide 3"
           />
         </div>
       </div>
