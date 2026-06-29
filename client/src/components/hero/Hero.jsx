@@ -13,7 +13,7 @@ export const Hero = () => {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
-            src="client/public/img/af4bb7662179f9d7ba691f831a88189d.jpg"
+            src="./public/img/af4bb7662179f9d7ba691f831a88189d.jpg"
             className="d-block"
             alt="Slide 1"
           />
